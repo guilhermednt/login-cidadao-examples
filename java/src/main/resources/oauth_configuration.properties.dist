@@ -1,0 +1,8 @@
+application=generic
+authz_endpoint=https://meu.rs.gov.br/oauth/v2/auth
+token_endpoint=https://meu.rs.gov.br/oauth/v2/token
+resource_url=https://meu.rs.gov.br/api/v1/person
+scope=id username full_name name cpf birthdate email city picture public_profile voter_registration badges country uf city adress adress_number adress_complement rgs
+client_id=
+client_secret=
+redirect_uri=

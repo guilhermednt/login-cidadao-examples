@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:body>
+    <ui:composition template="../WEB-INF/views/base.xhtml">
+        <ui:define name="header">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">BlogCidadao</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Blogs</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <h:form class="form-horizontal">
+                                <h:commandButton value="Logout" role="button" class="btn btn-default" action="#{registerBean.logout}" />
+                            </h:form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </ui:define>
+        <ui:define name="body">
+            <div class="row">
+                <h2 id="try-header">
+                    Bem vindo ${username.get("first_name")}<br />
+                </h2>
+            </div>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
+
+

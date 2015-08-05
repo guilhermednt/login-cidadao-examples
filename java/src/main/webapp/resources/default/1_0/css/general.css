@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+#jumbo {
+  background-color: #333;
+  color: #eee;
+}
+#jumbo p {
+  font-size: 16px;
+}
+#try-header {
+  margin: 30px 0px;
+}
+#try-more {
+  margin: 30px 0px;
+  font-style: italic;
+}
+.lc-link {
+  background-image: url("https://meu.rs.gov.br/bundles/procergslogincidadaocore/images/meu_logo.png");
+  background-position: 0 -92px !important;
+  background-repeat: no-repeat;
+  height: 50px;
+  text-indent: 50px;
+  width: 260px;
+}

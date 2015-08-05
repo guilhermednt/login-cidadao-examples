@@ -1,0 +1,42 @@
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="tarefas">
+		
+		<!-- provedor/implementacao do JPA -->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<!-- entidade mapeada -->
+		<class>blog.modelo.BlogUser</class>
+		<class>blog.modelo.BlogAuthor</class>
+		<class>blog.modelo.BlogCategory</class>
+		<class>blog.modelo.BlogComment</class>
+		<class>blog.modelo.BlogCommentId</class>
+		<class>blog.modelo.BlogPost</class>
+		<class>blog.modelo.BlogRelated</class>
+		<class>blog.modelo.BlogRelatedId</class>
+		<class>blog.modelo.BlogTag</class>
+		
+		<properties>
+			<!-- dados da conexao -->
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/blog_cidadao"
+				/>
+			<property name="javax.persistence.jdbc.user" 
+      value="d_sgg_meu_ad" />
+			<property name="javax.persistence.jdbc.password" 
+      value="aD65e24dd5" />
+			<!--  propriedades do hibernate -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"
+				/>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			
+			<!--  atualiza o banco, gera as tabelas se for preciso -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			
+		</properties>
+	</persistence-unit>
+</persistence>

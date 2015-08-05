@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:body>
+    <ui:composition template="WEB-INF/views/base.xhtml">
+        <ui:define name="body">
+            <div class="row">
+                <h2 id="try-header">
+                    Aplicação modelo integrado com o login cidadão <br />
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            O que é?<br />
+                        </h3>
+                        <div class="well" id="about-this">
+                            <p >Isso é uma aplicação modelo para a utilização <a href="https://meu.rs.gov.br/">login cidadão</a>.</p>
+                            <p >Essa aplicação consiste no modelo basico de blog utilizado para demonstrar a tecnologia do <a href="http://guides.rubyonrails.org/getting_started.html">Ruby on Rails</a></p>
+                            <p >Esse modelo utilizar a tecnlogia JSF para aplicações JavaEE 7.0</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>
+                            Acessar com Login Cidadão <br />
+                        </h3>
+                        <div class="well">
+                            <h:form class="form-horizontal">
+                                <h:commandButton value="Connectar com Login Cidadão" role="button" class="btn btn-primary lc-link" action="#{registerBean.signUp}" />
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
+
+

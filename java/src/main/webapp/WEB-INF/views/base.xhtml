@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:body>
+    <body>
+        <ui:composition template="base.raw.xhtml">
+
+            <ui:define name="header">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">BlogCidadao</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#about-this">Sobre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </ui:define>
+
+            <ui:define name="stylesheets">
+                <h:outputStylesheet library="webjars" name="bootstrap/3.2.0/css/bootstrap.min.css" />
+                <h:outputStylesheet library="webjars" name="bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+                <h:outputStylesheet library="default" name="css/general.css" />
+            </ui:define>
+
+            <ui:define name="javascripts">
+                <h:outputScript library="webjars" name="jquery/1.11.1/jquery.min.js" />
+                <h:outputScript library="webjars" name="bootstrap/3.2.0/js/bootstrap.min.js" />
+            </ui:define>
+
+            <ui:define name="footer">
+            </ui:define>
+        </ui:composition>
+    </body>
+</h:body>
+</html>
+
+
+

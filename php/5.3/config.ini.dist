@@ -1,0 +1,11 @@
+[fkooman_client_config]
+authorize_endpoint = "https://meu.rs.gov.br/oauth/v2/auth";
+token_endpoint = "https://meu.rs.gov.br/oauth/v2/token";
+redirect_uri = "http://localhost/callback.php";
+client_id = "";
+client_secret = "";
+
+[fkooman_api_config]
+api_context = "Meu"
+api_scopes = "id username full_name cpf birthdate email city picture public_profile voter_registration badges country state city addresses id_cards get_all_notifications notifications cep mobile";
+api_url = "https://meu.rs.gov.br/api/v1/person.json";
